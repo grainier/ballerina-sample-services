@@ -31,3 +31,8 @@ Sample cURL command
 `http://localhost:9090/StoreService/processOrder?orderId=2`
 
 #### TODO: Use the observe package to test the tracing and metrics user apis
+
+##### Supported Version
+Ballerina 1.0.0-beta-SNAPSHOT  
+Language specification 2019R2  
+Ballerina tool 1.0.0  
