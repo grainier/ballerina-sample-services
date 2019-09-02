@@ -36,3 +36,5 @@ Sample cURL command
 Ballerina 1.0.0-beta-SNAPSHOT  
 Language specification 2019R2  
 Ballerina tool 1.0.0  
+
+For more information on Ballerina Observability, Refer https://ballerina.io/learn/how-to-observe-ballerina-code/
