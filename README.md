@@ -29,3 +29,5 @@ scrape_configs:
 
 Sample cURL command 
 `http://localhost:9090/StoreService/processOrder?orderId=2`
+
+#### TODO: Use the observe package to test the tracing and metrics user apis
