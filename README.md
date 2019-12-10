@@ -7,10 +7,10 @@ All four service can be run using the following commands.
 Since all four services can not start up the prometheus endpoint on port 9797, the default port has been overridden.
 
 ```
-ballerina run store.bal --b7a.observability.enabled=true 
-ballerina run order.bal --b7a.observability.enabled=true --b7a.observability.metrics.prometheus.port=9798 
-ballerina run product.bal --b7a.observability.enabled=true --b7a.observability.metrics.prometheus.port=9799 
-ballerina run inventory.bal --b7a.observability.enabled=true --b7a.observability.metrics.prometheus.port=9800
+ballerina run store --b7a.observability.enabled=true 
+ballerina run order --b7a.observability.enabled=true --b7a.observability.metrics.prometheus.port=9798 
+ballerina run product --b7a.observability.enabled=true --b7a.observability.metrics.prometheus.port=9799 
+ballerina run inventory --b7a.observability.enabled=true --b7a.observability.metrics.prometheus.port=9800
 ```
 
 Following is a sample `prometheus.yml` file that can be used to configure prometheus to scrape data from all 4 endpoints.

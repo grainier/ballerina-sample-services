@@ -1,0 +1,15 @@
+[project]
+org-name= "grainier"
+version= "0.1.0"
+
+[dependencies]
+
+[platform]
+target = "java8"
+
+    [[platform.libraries]]
+    artafactId = "mysql-connector-java"
+    version = "8.0.17"
+    path = "/Users/grainier/Downloads/mysql-connector-java-8.0.17/mysql-connector-java-8.0.17.jar"
+    groupId = "mysql"
+    modules = ["order", "product", "inventory"]
