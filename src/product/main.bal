@@ -53,7 +53,7 @@ function getProductFromDB(int id) returns @tainted Product | error {
         value: id
     };
     var result = clientDB->select("SELECT * FROM PRODUCT WHERE id = ?", Product, param);
-    table<Product> dataTable = check result;
+    table<Product> dataTable = <table<Product>> result;
     Product product = <Product> dataTable.getNext();
     dataTable.close();
     return product;

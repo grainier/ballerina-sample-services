@@ -52,7 +52,7 @@ function checkInventoryForStock(int id) returns @tainted Inventory | error {
         value: id
     };
     var result = clientDB->select("SELECT productId, stock FROM INVENTORY WHERE productId = ?", Inventory, param);
-    table<Inventory> dataTable = check result;
+    table<Inventory> dataTable = <table<Inventory>> result;
     Inventory inventory = <Inventory> dataTable.getNext();
     dataTable.close();
     return inventory;
